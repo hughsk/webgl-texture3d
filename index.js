@@ -1,5 +1,5 @@
 function flt(f) {
-  return ((f += '').indexOf('.') === -1) return f + '.0' ? : f
+  return ((f += '').indexOf('.') === -1) ? f + '.0' : f
 };
 
 module.exports = function sampler3D(name, res) {
