@@ -1,0 +1,15 @@
+{
+  "name": "webgl-texture3d",
+  "version": "0.0.1",
+  "description": "Workaround GLSL function for using 3D textures in WebGL",
+  "main": "index.js",
+  "keywords": [
+    "glsl",
+    "texture",
+    "3d",
+    "lookup",
+    "webgl"
+  ],
+  "author": "Google, Inc.",
+  "license": "MIT"
+}
