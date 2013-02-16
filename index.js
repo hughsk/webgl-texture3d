@@ -10,7 +10,7 @@ module.exports = function sampler3D(name, res) {
 , "const float tex3d_slicePixelSize = " + flt(1/(res*res)) + ";"
 , "const float tex3d_sliceInnerSize = " + flt(1/(res*res) * (res - 1)) + ";"
 
-, "vec4 " + (name || 'sampleAs3DTexture)' + "(sampler2D tex, vec3 texCoord) {"
+, "vec4 " + (name || 'sampleAs3DTexture') + "(sampler2D tex, vec3 texCoord) {"
   , "float zSlice0 = min(floor(texCoord.z * tex3d_size), " + flt(res - 1) + ");"
   , "float zSlice1 = min(zSlice0 + 1.0, " + flt(res - 1) + ");"
   , "float xOffset = tex3d_slicePixelSize * 0.5 + texCoord.x * tex3d_sliceInnerSize;"
